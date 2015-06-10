@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F8A866D-EB38-4CD1-AC4F-27420ED21669}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GG2014</RootNamespace>
+    <AssemblyName>GG2014</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin, Version=12.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DataRabbit">
+      <HintPath>..\Dlls\DataRabbit.dll</HintPath>
+    </Reference>
+    <Reference Include="ESBasic, Version=2.0.0.0, Culture=neutral, PublicKeyToken=ba1538489f75683e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\ESBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="ESFramework, Version=4.7.2.0, Culture=neutral, PublicKeyToken=ba1538489f75683e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\ESFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="OMCS, Version=3.6.0.0, Culture=neutral, PublicKeyToken=ba1538489f75683e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\OMCS.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ba1538489f75683e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\PaintFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.88.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoDocker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AutoDocker.Designer.cs">
+      <DependentUpon>AutoDocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FriendAndGroup\AddFriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendAndGroup\AddFriendForm.Designer.cs">
+      <DependentUpon>AddFriendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditCatelogNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditCatelogNameForm.Designer.cs">
+      <DependentUpon>EditCatelogNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChatRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChatRecordForm.Designer.cs">
+      <DependentUpon>ChatRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TwinkleNotifyIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\TwinkleNotifyIcon.Designer.cs">
+      <DependentUpon>TwinkleNotifyIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalUserCache.cs" />
+    <Compile Include="Forms\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateUserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateUserInfoForm.Designer.cs">
+      <DependentUpon>UpdateUserInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserInformationForm.Designer.cs">
+      <DependentUpon>UserInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FriendAndGroup\JoinGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendAndGroup\JoinGroupForm.Designer.cs">
+      <DependentUpon>JoinGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResourceManager.cs" />
+    <Compile Include="Forms\PhotoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PhotoForm.Designer.cs">
+      <DependentUpon>PhotoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\VideoRequestPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chat\VideoRequestPanel.Designer.cs">
+      <DependentUpon>VideoRequestPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\ChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\ChatForm.Designer.cs">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationForm.Designer.cs">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormPartial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaintForm.Designer.cs">
+      <DependentUpon>PaintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Chat\VideoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\VideoForm.Designer.cs">
+      <DependentUpon>VideoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Disk\NDiskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Disk\NDiskForm.Designer.cs">
+      <DependentUpon>NDiskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Disk\DiskRequestPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Disk\DiskRequestPanel.Designer.cs">
+      <DependentUpon>DiskRequestPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteHelp\RemoteHelpRequestPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RemoteHelp\RemoteHelpRequestPanel.Designer.cs">
+      <DependentUpon>RemoteHelpRequestPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteHelp\RemoteHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteHelp\RemoteHelpForm.Designer.cs">
+      <DependentUpon>RemoteHelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteHelp\RemoteHelpHandlePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RemoteHelp\RemoteHelpHandlePanel.Designer.cs">
+      <DependentUpon>RemoteHelpHandlePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\GroupChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\GroupChatForm.Designer.cs">
+      <DependentUpon>GroupChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SystemSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SystemSettingForm.Designer.cs">
+      <DependentUpon>SystemSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FriendAndGroup\CreateGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendAndGroup\CreateGroupForm.Designer.cs">
+      <DependentUpon>CreateGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FriendAndGroup\SearchFriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendAndGroup\SearchFriendForm.Designer.cs">
+      <DependentUpon>SearchFriendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HeadImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HeadImageForm.Designer.cs">
+      <DependentUpon>HeadImageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\AudioHandlePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chat\AudioHandlePanel.Designer.cs">
+      <DependentUpon>AudioHandlePanel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FriendAndGroup\AddFriendForm.resx">
+      <DependentUpon>AddFriendForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditCatelogNameForm.resx">
+      <DependentUpon>EditCatelogNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChatRecordForm.resx">
+      <DependentUpon>ChatRecordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TwinkleNotifyIcon.resx">
+      <DependentUpon>TwinkleNotifyIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateUserInfoForm.resx">
+      <DependentUpon>UpdateUserInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserInformationForm.resx">
+      <DependentUpon>UserInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendAndGroup\JoinGroupForm.resx">
+      <DependentUpon>JoinGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PhotoForm.resx">
+      <DependentUpon>PhotoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\VideoRequestPanel.resx">
+      <DependentUpon>VideoRequestPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\ChatForm.resx">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationForm.resx">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PaintForm.resx">
+      <DependentUpon>PaintForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\VideoForm.resx">
+      <DependentUpon>VideoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disk\NDiskForm.resx">
+      <DependentUpon>NDiskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disk\DiskRequestPanel.resx">
+      <DependentUpon>DiskRequestPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteHelp\RemoteHelpRequestPanel.resx">
+      <DependentUpon>RemoteHelpRequestPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteHelp\RemoteHelpForm.resx">
+      <DependentUpon>RemoteHelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteHelp\RemoteHelpHandlePanel.resx">
+      <DependentUpon>RemoteHelpHandlePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\GroupChatForm.resx">
+      <DependentUpon>GroupChatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SystemSettingForm.resx">
+      <DependentUpon>SystemSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendAndGroup\CreateGroupForm.resx">
+      <DependentUpon>CreateGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendAndGroup\SearchFriendForm.resx">
+      <DependentUpon>SearchFriendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeadImageForm.resx">
+      <DependentUpon>HeadImageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\AudioHandlePanel.resx">
+      <DependentUpon>AudioHandlePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AIO_SetBtn_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AIO_SetBtn_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AIO_SetBtn_highlight_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AIO_SetBtn_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_max_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_max_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_max_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mini_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mini_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mini_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_restore_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_restore_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_restore_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Skin_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Skin_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Skin_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\night.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duozhanghao6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner_back_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner_back_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner_left_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner_left_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner_right_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner_right_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duozhanghao1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duozhanghao2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duozhanghao3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duozhanghao4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duozhanghao5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_set_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_set_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_set_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zhuce_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mima.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mima_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mima_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zhuce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zhuce_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+    <None Include="Resources\QQ图片20150511120839.png" />
+    <None Include="Resources\pic2.png" />
+    <None Include="Resources\Picture.bmp" />
+    <None Include="Resources\mic2.png" />
+    <None Include="Resources\None64.ico" />
+    <None Include="Resources\user_delete.png" />
+    <None Include="Resources\up1.png" />
+    <None Include="Resources\refresh1.png" />
+    <None Include="Resources\paste1.png" />
+    <None Include="Resources\VASFlagEnable.png" />
+    <None Include="Resources\normal_group_40.png" />
+    <None Include="Resources\RemoteHelp.png" />
+    <None Include="Resources\NetState_Point4.png" />
+    <None Include="Resources\VideoWaitToAnswer.png" />
+    <None Include="Resources\AV_Accept.png" />
+    <None Include="Resources\AV_Refuse.png" />
+    <None Include="Resources\AV_VDC_Bkg.png" />
+    <None Include="Resources\GVideo_Icon_48.png" />
+    <None Include="Resources\icon_weibo.png" />
+    <None Include="Resources\app_icon_16.png" />
+    <None Include="Resources\Boot.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\Boot1.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\20120910030548870_easyicon_cn_24.png" />
+    <None Include="Resources\20120910031018598_easyicon_cn_24.png" />
+    <None Include="Resources\20120818113914742_easyicon_cn_161.png" />
+    <None Include="Resources\app_icon_161.png" />
+    <None Include="Resources\app_icon_401.png" />
+    <None Include="Resources\AV_Accept1.png" />
+    <None Include="Resources\copy1.png" />
+    <None Include="Resources\cut1.png" />
+    <None Include="Resources\delete1.png" />
+    <None Include="Resources\down1.png" />
+    <None Include="Resources\folder_new1.png" />
+    <None Include="Resources\Go1.bmp" />
+    <None Include="Resources\Conversation.png" />
+    <None Include="Resources\Group2.png" />
+    <None Include="Resources\HDVideoHangs.png" />
+    <Content Include="app.ico" />
+    <None Include="Resources\busy.gif" />
+    <None Include="Resources\GG64.png" />
+    <None Include="Resources\20150511082355617_easyicon_net_1024.png" />
+    <Content Include="Resources\inputbox.png" />
+    <Content Include="Resources\inputbox_hover.png" />
+    <None Include="Resources\back2.PNG" />
+    <None Include="Resources\back.PNG" />
+    <None Include="Resources\button_login_normal.png" />
+    <None Include="Resources\button_login_hover.png" />
+    <None Include="Resources\button_login_down.png" />
+    <None Include="Resources\noon.jpg" />
+    <None Include="Resources\morning.jpg" />
+    <None Include="Resources\afternoon.jpg" />
+    <None Include="Resources\BackPalace.png" />
+    <None Include="Resources\ToolbarBtnNormal.png" />
+    <None Include="Resources\ToolbarBtnDown.png" />
+    <None Include="Resources\menu_btn_normal.png" />
+    <None Include="Resources\menu_btn_highlight.png" />
+    <None Include="Resources\menu_check.png" />
+    <None Include="Resources\pictureBox1.Image.png" />
+    <None Include="Resources\aio_quickbar_twitter.png" />
+    <None Include="Resources\aio_quickbar_sendpic.png" />
+    <None Include="Resources\aio_quickbar_screen2.png" />
+    <None Include="Resources\aio_quickbar_screen1.png" />
+    <None Include="Resources\aio_quickbar_richface.png" />
+    <None Include="Resources\aio_quickbar_register.png" />
+    <None Include="Resources\aio_quickbar_more.png" />
+    <None Include="Resources\aio_quickbar_inputassist.png" />
+    <None Include="Resources\aio_quickbar_font.png" />
+    <None Include="Resources\aio_quickbar_flirtationface.png" />
+    <None Include="Resources\aio_quickbar_face.png" />
+    <None Include="Resources\aio_quickbar_cut.png" />
+    <None Include="Resources\all_inside_bkg.png" />
+    <None Include="Resources\BCF_Title32.ico" />
+    <None Include="Resources\aio_head_normal.png" />
+    <None Include="Resources\checkbox_tick_pushed.png" />
+    <None Include="Resources\checkbox_tick_normal.png" />
+    <None Include="Resources\checkbox_tick_highlight.png" />
+    <None Include="Resources\checkbox_pushed.png" />
+    <None Include="Resources\checkbox_hightlight.png" />
+    <None Include="Resources\checkbox_normal.png" />
+    <None Include="Resources\busy %282%29.png" />
+    <None Include="Resources\away %282%29.png" />
+    <None Include="Resources\Qme %282%29.png" />
+    <None Include="Resources\mute %282%29.png" />
+    <None Include="Resources\invisible %282%29.png" />
+    <None Include="Resources\imonline %282%29.png" />
+    <None Include="Resources\imoffline %282%29.png" />
+    <None Include="Resources\Norml.png" />
+    <None Include="Resources\allbtn_highlight.png" />
+    <None Include="Resources\allbtn_down.png" />
+    <None Include="Resources\imgRjp.BackgroundImage.png" />
+    <None Include="Resources\login_inputbtn_highlight.png" />
+    <None Include="Resources\login_inputbtn_down.png" />
+    <None Include="Resources\login_inputbtn_normal.png" />
+    <None Include="Resources\spin_normal_down.png" />
+    <None Include="Resources\frameBorderEffect_normalDraw.png" />
+    <None Include="Resources\frameBorderEffect_mouseDownDraw.png" />
+    <None Include="Resources\texture2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GG2014.Core\GG2014.Core.csproj">
+      <Project>{631E0627-09F3-4EED-8F37-A71D51B6C39E}</Project>
+      <Name>GG2014.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JustLib\JustLib.csproj">
+      <Project>{D39E8188-1274-459D-93B4-453A6F30CADF}</Project>
+      <Name>JustLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

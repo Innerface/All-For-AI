@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GG2014.TwinkleNotifyIcon">
+    <Position X="2.75" Y="1" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQEBAAICCAAJYIIABCQAAACAkAhAABIACAQAAEACgI=</HashCode>
+      <FileName>Forms\TwinkleNotifyIcon.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="notifyIcon1" />
+      <Field Name="timer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="friendQueue" />
+      <Field Name="groupQueue" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GG2014.UnhandleFriendMessageBox">
+    <Position X="7.5" Y="2.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\TwinkleNotifyIcon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GG2014.UnhandleGroupMessageBox">
+    <Position X="7.5" Y="4.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\TwinkleNotifyIcon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.NotifyIcon" Collapsed="true">
+    <Position X="7.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.Timer" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="GG2014.ITwinkleNotifySupporter" Collapsed="true">
+    <Position X="12.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgAEAAAIBAAAAAAAABAAABAAAACAAAAAABAAAAQAAg=</HashCode>
+      <FileName>Forms\TwinkleNotifyIcon.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GG2014.IChatForm" Collapsed="true">
+    <Position X="12.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\TwinkleNotifyIcon.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GG2014.IGroupChatForm" Collapsed="true">
+    <Position X="14" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\TwinkleNotifyIcon.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GG2014.UnhandleMessageType" Collapsed="true">
+    <Position X="12.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Forms\TwinkleNotifyIcon.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
